@@ -1,6 +1,6 @@
 // ===== MailPolish Chrome Extension - Popup Logic =====
 
-const DEFAULT_API_URL = 'http://127.0.0.1:8000';
+const DEFAULT_API_URL = 'https://mailpolish-api.onrender.com';
 
 // DOM Elements
 const inputText = document.getElementById('inputText');
