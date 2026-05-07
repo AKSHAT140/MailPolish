@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MailPolish</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app-container animated-enter">
+    <header>
+      <h1>✨ MAIL POLISH</h1>
+      <p>Convert messy or Hinglish thoughts into professional communication.</p>
+    </header>
+
+    <div class="main-layout">
+      <!-- Input Section -->
+      <div class="panel">
+        <div class="panel-header">
+          <h2>Input</h2>
+          <div class="controls">
+            <select id="recipient">
+              <option value="Colleague">Colleague</option>
+              <option value="Boss">Boss / Manager</option>
+              <option value="Client">Client</option>
+            </select>
+            <select id="outputFormat">
+              <option value="Rewrite">Rewrite</option>
+              <option value="Full Email">Full Email</option>
+            </select>
+          </div>
+        </div>
+        <textarea id="inputText" placeholder="Type your rough draft here... (e.g., 'mujhe kal chutti chahiye, boss ko message likh do politely')"></textarea>
+        <button class="btn-primary" id="improveBtn">✨ Improve</button>
+      </div>
+
+      <!-- Output Section -->
+      <div class="panel">
+        <div class="panel-header">
+          <h2>Output</h2>
+          <button class="copy-btn" id="copyBtn" disabled>📋 Copy</button>
+        </div>
+        <div class="output-area" id="outputArea">
+          <div class="empty-state" id="emptyState">Your professional message will appear here.</div>
+        </div>
+        <div class="quick-actions">
+          <button class="btn-secondary" id="politeBtn" disabled>More Polite</button>
+          <button class="btn-secondary" id="assertiveBtn" disabled>More Assertive</button>
+          <button class="btn-secondary" id="shortenBtn" disabled>Shorten</button>
+          <button class="btn-secondary" id="regenBtn" disabled>Regenerate</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Settings Bar -->
+    <div class="settings-bar">
+      <label for="apiUrl">Backend URL:</label>
+      <input type="text" id="apiUrl" placeholder="http://127.0.0.1:8000" />
+      <button class="btn-save" id="saveSettingsBtn">Save</button>
+    </div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

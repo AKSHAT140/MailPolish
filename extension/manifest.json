@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "MailPolish - AI Email Writer",
+  "version": "1.0.0",
+  "description": "Convert messy or Hinglish thoughts into professional communication instantly.",
+  "icons": {
+    "128": "icons/icon128.png"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "128": "icons/icon128.png"
+    },
+    "default_title": "MailPolish"
+  },
+  "permissions": []
+}
