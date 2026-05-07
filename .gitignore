@@ -1,0 +1,14 @@
+# API Keys and Secrets (CRITICAL)
+.env
+backend/.env
+
+# Python
+backend/.venv/
+backend/__pycache__/
+*.pyc
+
+# Node.js (Frontend)
+frontend/node_modules/
+frontend/dist/
+frontend/build/
+.DS_Store
